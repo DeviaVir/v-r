@@ -22,7 +22,7 @@ I've built this template on the most recent version of Chrome and have tested in
 |:-------------:|:-------------:| ---------------:| --------------:|
 | Chrome        | Yes           | No              | -              |
 | Opera         | Yes           | No              | -              |
-| Firefox       | Yes           | Yes             | Being Fixed    |
+| Firefox       | Yes           | **Yes**         | **Being Fixed**|
 | Safari        | Yes           | No              | -              |
 | IE 10         | Yes           | No              | -              |
 | IE 11         | Yes           | No              | -              |
