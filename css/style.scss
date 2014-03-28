@@ -1,7 +1,7 @@
 /*
- *   Flash Topup
+ *   Vår 2014
  *   SCSS/SASS
- *   V.01
+ *   V.01.1
  */
 
 body {
@@ -16,6 +16,16 @@ div, a {
 // Colors
 $salmon: #dd8673;
 $green: #79b0a0;
+$ocean: #2161ae;
+$sky: #0e80ac;
+
+// Mixins
+@mixin text-nowrap() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
 
 // Helpers
 .align-left  { text-align: left;}
@@ -61,6 +71,43 @@ input[type='password'] {
   outline: none;
   width: 100%;
   padding: 15px 15px;}
+
+// Logo
+#logo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: -0.07em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-animation: logo 20s infinite ease;
+     -moz-animation: logo 20s infinite ease;
+       -o-animation: logo 20s infinite ease;
+          animation: logo 20s infinite ease;
+}
+
+@-webkit-keyframes logo {
+  0%   { color: $sky;}
+  50%  { color: desaturate($sky,50%);}
+  100% { color: $sky;}
+}
+@-moz-keyframes logo {
+  0%   { color: $sky;}
+  50%  { color: desaturate($sky,50%);}
+  100% { color: $sky;}
+}
+@-o-keyframes logo {
+  0%   { color: $sky;}
+  50%  { color: desaturate($sky,50%);}
+  100% { color: $sky;}
+}
+@keyframes logo {
+  0%   { color: $sky;}
+  50%  { color: desaturate($sky,50%);}
+  100% { color: $sky;}
+}
 
 // Typography
 p {
@@ -141,7 +188,7 @@ button.btn {
   top: 0;
   display: inline-block;
   padding: 12px 24px;
-  background: #79b0a0;
+  background: $ocean;
   border-radius: 4px;
   border: none;
   outline: none;
@@ -150,10 +197,17 @@ button.btn {
   font-size: 20px;
   text-decoration: none;
   color: #fff;
-  border-bottom: 2px solid #619888;
+  border-bottom: 2px solid darken($ocean,15%);
   // Better Font Rendering
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;}
+  -moz-osx-font-smoothing: grayscale;
+  // Hover
+  &:hover {
+    background: darken($ocean,5%);
+    border-bottom-color: darken($ocean,20%);
+    color: #fff;
+  }
+}
 
   .btn-full,
   a.btn-full,
@@ -163,13 +217,6 @@ button.btn {
     width: 100%;
     font-weight: 100;
     text-transform: uppercase;}
-
-  // .btn:active,
-  // a.btn:active,
-  // input.btn:active,
-  // button.btn:active {
-  //   top: 2px;
-  //   border-bottom: 0px solid #619888;}
 
   .btn-blue,
   a.btn-blue,
@@ -300,12 +347,20 @@ $yellow-highlight: #e8cc48;
         padding: 0 15px;
         text-decoration: none;
         letter-spacing: -0.4px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         &:hover {
           background: #428bca;
           color: #fff;
         }
         &.accent {
           color: #63b2e9;
+          &:hover {
+            background: desaturate($ocean,25%);
+            color: #fff;
+          }
         }
       }
     }
@@ -937,7 +992,7 @@ $yellow-highlight: #e8cc48;
   float: left;
   width: 100%;
   clear: both;
-  background: #79b0a0;
+  background: desaturate($ocean,25%);
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -961,20 +1016,20 @@ $yellow-highlight: #e8cc48;
 // Exclusive Offers
 #exclusive {
   text-align: center;
-  color: #4b5c5e;
+  color: desaturate($ocean,50%);
   // Better Font Rendering
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;}
 
 #exclusive p {
-  color: #4b5c5e;
+  color: desaturate($ocean,50%);
   line-height: 26px;}
 
 #exclusive .ex-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   font-size: 60px;
-  color: #4b5c5e;}
+  color: desaturate($ocean,50%);}
 
   #exclusive .ex-title b {
     font-weight: 600;}
@@ -1036,7 +1091,7 @@ $yellow-highlight: #e8cc48;
   #offers h3, 
   #offers h4 {
     font-weight: 100;
-    color: #4b5c5e;}
+    color: desaturate($ocean,50%);}
 
   #offers h2 {
     font-size: 30px;}
@@ -1045,7 +1100,7 @@ $yellow-highlight: #e8cc48;
     font-size: 26px;}
 
   #offers p {
-    color: #4b5c5e;}
+    color: desaturate($ocean,50%);}
 
   #offers .offer {
     float: left;
@@ -1361,7 +1416,7 @@ $yellow-highlight: #e8cc48;
   #networks h2, 
   #networks h3 {
     font-weight: 100;
-    color: #4b5c5e;}
+    color: desaturate($ocean,50%);}
 
   #networks h2 {
     font-size: 30px;}
@@ -1372,29 +1427,32 @@ $yellow-highlight: #e8cc48;
   width: 100%;
   min-height: 800px;
   color: #fff;
-  background: #495a5c;
-  background: -moz-radial-gradient(center top, ellipse cover,  #495a5c 0%, #121d1f 100%);
-  background: -webkit-gradient(radial, center top center, 0px, center center, 100%, color-stop(0%,#495a5c), color-stop(100%,#121d1f));
-  background: -webkit-radial-gradient(center top, ellipse cover,  #495a5c 0%,#121d1f 100%);
-  background: -o-radial-gradient(center top, ellipse cover,  #495a5c 0%,#121d1f 100%);
-  background: -ms-radial-gradient(center top, ellipse cover,  #495a5c 0%,#121d1f 100%);
-  background: radial-gradient(ellipse at center top,  #495a5c 0%,#121d1f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#495a5c', endColorstr='#121d1f',GradientType=1 );
+  background: $ocean;
+  background: -moz-radial-gradient(center top, ellipse cover,  desaturate($ocean,25%) 0%, darken($ocean,35%) 100%);
+  background: -webkit-gradient(radial, center top center, 0px, center center, 100%, color-stop(0%,desaturate($ocean,25%)), color-stop(100%,darken($ocean,35%)));
+  background: -webkit-radial-gradient(center top, ellipse cover,  desaturate($ocean,25%) 0%,darken($ocean,35%) 100%);
+  background: -o-radial-gradient(center top, ellipse cover,  desaturate($ocean,25%) 0%,darken($ocean,35%) 100%);
+  background: -ms-radial-gradient(center top, ellipse cover,  desaturate($ocean,25%) 0%,darken($ocean,35%) 100%);
+  background: radial-gradient(ellipse at center top,  desaturate($ocean,25%) 0%,darken($ocean,35%) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='desaturate($ocean,25%)', endColorstr='darken($ocean,35%)',GradientType=1 );
   // Font Rendering
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;}
-
-  #locations h2 {
+  -moz-osx-font-smoothing: grayscale;
+  // Headings
+  h2 {
     font-size: 30px;
-    font-weight: 100;}
-  
-  #locations h3 {
+    font-weight: 100;
+  }
+  h3 {
     font-size: 16px;
-    font-weight: 600;}
+    font-weight: 600; 
+    @include text-nowrap;
+  }
+}
 
   #locations h3 [class^="icon-"],
   #locations h3 [class*=" icon-"]{
-    color: #8dcdb0;}
+    color: lighten($sky,15%);}
 
   #locations .location-map-svg {
     float: left;
@@ -1579,7 +1637,11 @@ $yellow-highlight: #e8cc48;
           height: 58px;
         }
         &:hover {
-          background: #79b0a0;
+          background: $sky;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           .pin, label, .rate, a.all {
             color: #fff;}
         }
@@ -1679,13 +1741,13 @@ $yellow-highlight: #e8cc48;
           float: left;
           display: block;
           position: absolute;
-          background: #79b0a0;
+          background: lighten($sky,1%);
           top: 0;
           left: 0;
           width: 100%;
           height: 48px;
           .pin {
-            background: #79b0a0;
+            background: lighten($sky,1%);
             color: #fff;
             width: 48px;
             text-align: center;
@@ -1717,7 +1779,7 @@ $yellow-highlight: #e8cc48;
           }
           .star {
             right: -24px;
-            background: #79b0a0;
+            background: lighten($sky,1%);
             color: #fff;
             border-radius: 24px;
             -webkit-transition: right 0.2s ease-in-out;

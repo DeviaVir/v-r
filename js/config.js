@@ -53,7 +53,7 @@ $('#moto').waypoint(function(direction) {
 
 function parallax(){
   var scrolled = $(window).scrollTop();
-  $('#moto').css('background-position','center ' + (scrolled*0.2) + 'px');
+  $('#moto').css('background-position','center ' + (scrolled*0.15) + 'px');
   $('#moto-hand').css('-webkit-transform','translate3d(0,-' + (scrolled*0.096) + 'px,0)');
 }
 
