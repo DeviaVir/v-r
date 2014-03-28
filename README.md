@@ -37,11 +37,12 @@ I've built this template on the most recent version of Chrome and have tested in
 
 There's no online demo at the moment, apologies!
 
-## Thank you
+## Editors Notes
+
+#### Thank you!
 I would also like to give a huge credit to [CodePen](http://codepen.io) and its community for allowing me to develop each part of this template and the feedback i've received! It's very humbling to learn my code is being used and/or helping people to learn!
 
-
-## Future
+#### In the future...
 This is currently the first publicly released version i have made. I do intend to curate this template and improve the efficiency of the **SCSS** and **Jquery** where i can.
 
 *I plan to make a **HAML** version for all the uber cool **Ruby** des out there!*
