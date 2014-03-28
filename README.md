@@ -14,7 +14,7 @@ I've used **SCSS**, **Jquery** and **HTML5** to build the main architecture on t
 * [CodeKit](https://incident57.com/codekit/)
 * [CodePen](http://codepen.io)
 
-## Comaptibility
+## Web Comaptibility
 
 I've built this template on the most recent version of Chrome and have tested in the most recent versions of the following:
 
@@ -32,6 +32,14 @@ I've built this template on the most recent version of Chrome and have tested in
 * Opera 20.0
 * Firefox 28.0
 * Version 7.0
+
+## Mobile Compatibility
+
+As a responsive website the layout should work seemlessly across all new mobile devices. It has been tested on iOS7 and Android Jellybean.
+
+| Mobile OS                                                                   | Works        |
+| ---------------------------------------------------------------------------:|:-------------|
+| ![Apple iOS 7](https://www.google.co.uk/mobile/images/ios.png "iOS 7")      | yes          |
 
 ## Demo
 
