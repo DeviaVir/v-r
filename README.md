@@ -18,11 +18,11 @@ I've used **SCSS**, **Jquery** and **HTML5** to build the main architecture on t
 
 I've built this template on the most recent version of Chrome and have tested in the most recent versions of the following:
 
-| Browser       | Works         | Works with bugs | Has no support |
+| Browser       | Works         | Has bugs        | Info           |
 | ------------- |:-------------:| ---------------:| --------------:|
 | Chrome        | Yes           | No              | -              |
 | Opera         | Yes           | No              | -              |
-| Firefox       | Yes           | No              | -              |
+| Firefox       | Yes           | Yes             | Being Fixed    |
 | Safari        | Yes           | No              | -              |
 | IE 10         | Yes           | No              | -              |
 | IE 11         | Yes           | No              | -              |
