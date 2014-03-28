@@ -14,6 +14,9 @@ I've used **SCSS**, **Jquery** and **HTML5** to build the main architecture on t
 * [CodeKit](https://incident57.com/codekit/)
 * [CodePen](http://codepen.io)
 
+## Demo
+
+There's no online demo at the moment, apologies!
 
 ## Thank you
 I would also like to give a huge credit to [CodePen](http://codepen.io) and its community for allowing me to develop each part of this template and the feedback i've received! It's very humbling to learn my code is being used and/or helping people to learn!
