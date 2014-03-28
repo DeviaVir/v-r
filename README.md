@@ -4,7 +4,7 @@ Vår 2014 is my first publicly released template. It incorporates a few techniqu
 
 If you do use it then i do not expect to be credited for your adaptations; but i wont be upset if you link to my [Twitter](http://twitter.com/mattsince87).
 
-### Vår **_noun_** - *Swedish*
+### Vår: **_noun_** - *Swedish*
 > *Spring, Springtime*: The annual season after Winter and before Summer.
 
 ## How's it made?
