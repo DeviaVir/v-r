@@ -44,7 +44,9 @@ As a responsive website the layout should work seemlessly across all new mobile 
 
 ## Demo
 
-There's no online demo at the moment, apologies!
+View the demo online [here](http://var2014.mattlitherland.com)
+
+![Preview](http://var2014.mattlitherland.com/github-cdn/full.png)
 
 ## Editors Notes
 
