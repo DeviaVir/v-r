@@ -1,7 +1,11 @@
 # Vår 2014 - Spring Template
+
 Vår 2014 is my first publicly released template. It incorporates a few techniques i've been practicing over the last few months and i'd be delighted for you to use and share it as much as you want. A lot of effort went into building this template so please dont pass off **my work** as your own; not cool!
 
 If you do use it then i do not expect to be credited for your adaptations; but i wont be upset if you link to my [Twitter](http://twitter.com/mattsince87).
+
+### Vår **_noun_** - *Swedish*
+> *Spring, Springtime*: The annual season after Winter and before Summer.
 
 ## How's it made?
 I've used **SCSS**, **Jquery** and **HTML5** to build the main architecture on the site. I have also used **SnapSVG** to create the awesome flying airplane on the finance form at the top of the page!
