@@ -27,8 +27,11 @@ I've built this template on the most recent version of Chrome and have tested in
 | IE 10         | Yes           | No              | -              |
 | IE 11         | Yes           | No              | -              |
 
+#### Browser Versions
 * Chrome 33.0.1750.152
 * Opera 20.0
+* Firefox 28.0
+* Version 7.0
 
 ## Demo
 
