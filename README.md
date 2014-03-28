@@ -19,7 +19,7 @@ I've used **SCSS**, **Jquery** and **HTML5** to build the main architecture on t
 I've built this template on the most recent version of Chrome and have tested in the most recent versions of the following:
 
 | Browser       | Works         | Has bugs        | Info           |
-| ------------- |:-------------:| ---------------:| --------------:|
+|:-------------:|:-------------:| ---------------:| --------------:|
 | Chrome        | Yes           | No              | -              |
 | Opera         | Yes           | No              | -              |
 | Firefox       | Yes           | Yes             | Being Fixed    |
@@ -39,7 +39,8 @@ As a responsive website the layout should work seemlessly across all new mobile 
 
 | Mobile OS                                                                                            | Works        |
 | ----------------------------------------------------------------------------------------------------:|:-------------|
-| ![Apple iOS 7](https://cdn1.iconfinder.com/data/icons/free-retina-icon-set/30/Android.png "iOS 7")   | yes          |
+| ![Android](https://cdn3.iconfinder.com/data/icons/social-circle/512/social_9-48.png "Android")       | Yes          |
+| ![Apple iOS 7](https://cdn0.iconfinder.com/data/icons/social-circle/512/apple2-48.png "iOS 7")       | Yes          |
 
 ## Demo
 
