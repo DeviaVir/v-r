@@ -14,6 +14,22 @@ I've used **SCSS**, **Jquery** and **HTML5** to build the main architecture on t
 * [CodeKit](https://incident57.com/codekit/)
 * [CodePen](http://codepen.io)
 
+## Comaptibility
+
+I've built this template on the most recent version of Chrome and have tested in the most recent versions of the following:
+
+| Browser       | Works         | Works with bugs | Has no support |
+| ------------- |:-------------:| ---------------:| --------------:|
+| Chrome        | Yes           | No              | -              |
+| Opera         | Yes           | No              | -              |
+| Firefox       | Yes           | No              | -              |
+| Safari        | Yes           | No              | -              |
+| IE 10         | Yes           | No              | -              |
+| IE 11         | Yes           | No              | -              |
+
+* Chrome 33.0.1750.152
+* Opera 20.0
+
 ## Demo
 
 There's no online demo at the moment, apologies!
