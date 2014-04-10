@@ -48,7 +48,7 @@ As a responsive website the layout should work seemlessly across all new mobile 
 
 ## Demo
 
-**View the demo online [here](http://var2014.mattlitherland.com).**
+**View the demo online at [CodePen.io](http://cdpn.io/gepCf).**
 
 ![Preview](http://var2014.mattlitherland.com/github-cdn/full.png)
 
