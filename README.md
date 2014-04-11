@@ -43,10 +43,10 @@ I've built this template on the most recent version of Chrome and have tested in
 
 As a responsive website the layout should work seemlessly across all new mobile devices. It has been tested on iOS7 and Android Jellybean.
 
-| Mobile OS                                                                                            | Works        |
-| ----------------------------------------------------------------------------------------------------:|:-------------|
-| ![Android](https://cdn3.iconfinder.com/data/icons/social-circle/512/social_9-48.png "Android")       | Yes          |
-| ![Apple iOS 7](https://cdn0.iconfinder.com/data/icons/social-circle/512/apple2-48.png "iOS 7")       | Yes          |
+| Platform                                                                                             | OS           | Works        |
+| ----------------------------------------------------------------------------------------------------:|:-------------|:-------------|
+| ![Android](https://cdn3.iconfinder.com/data/icons/social-circle/512/social_9-48.png "Android")       | Jellybean+   | Yes          |
+| ![Apple iOS 7](https://cdn0.iconfinder.com/data/icons/social-circle/512/apple2-48.png "iOS 7")       | iOS6+        | Yes          |
 
 ## Demo
 
