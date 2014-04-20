@@ -161,51 +161,55 @@ function progressShizzle() {
     var len = this.value.match(/\d/g).length;
     if (len >= 4) {
       // Expand Part 1
+      // alert("You Entered 4 Characters");
       $(".progress").addClass("part2");
-      $(".progress-points li:nth-child(2) .label").addClass("on"); 
+      $(".progress-points li:nth-child(2) .label").addClass("on");
       $(".msg1").removeClass("show");
       $(".msg2").addClass("show");
       $(".menu-group2 .menu-group-disabled").remove();
       $(".menu-group2").removeClass("tu-inactive");
       // Fire Up Part 2
-      radioA();
       function radioA() {
-        $('input:radio[name="radio-carrier"]').change(function(){
-          $(".progress").addClass("part3"); 
-          $(".progress-points li:nth-child(3) .label").addClass("on");  
+        // alert("Radio A Started");
+        $(document).on('change','input:radio[name="radio-carrier"]',function(){
+          // alert("Changed");
+          $(".progress").addClass("part3");
+          $(".progress-points li:nth-child(3) .label").addClass("on");
           $(".msg2").removeClass("show");
-          $(".msg3").addClass("show"); 
+          $(".msg3").addClass("show");
           $(".menu-group3 .menu-group-disabled").remove();
           $(".menu-group3").removeClass("tu-inactive");
-          // Fire Up Part 3    
-          radioB(); 
+          // Fire Up Part 3
           function radioB() {
+            // alert("Radio B Called");
             $('input:radio[name="radio-amount"]').change(function(){
               $(".progress").addClass("part4"); 
-              $(".progress-points li:nth-child(3) .label-last").addClass("on");  
+              $(".progress-points li:nth-child(3) .label-last").addClass("on");
               $(".msg3").removeClass("show");
-              $(".msg4").addClass("show"); 
+              $(".msg4").addClass("show");
               $(".btn-wrap .menu-group-disabled").remove();
               $(".topup-button").removeClass("tu-inactive");
               $("#svg-container").removeClass("tu-inactive");        
             });
             // Fire Up Part 4
-            submitForm();
             function submitForm() {
               // Do Something
               $('button').click(function(){
                 // $("#progress-d .bar").addClass("build"); 
                 // $("#progress-d .label-last").addClass("on");
-                // $(".msg4").removeClass("show"); 
+                // $(".msg4").removeClass("show");
               });
             }
+            submitForm();
           }
+          radioB();
         });
       }
+      radioA();
     }
     else {
       // Remove Progression
-    }     
+    }
   });
 }
 progressShizzle();
@@ -234,7 +238,7 @@ jQuery(document).ready(function(){
   Triangle.attr({
     id: "plane",
     fill: "#fff"
-  }); 
+  });
   
   initTriangle();
   
@@ -274,12 +278,12 @@ jQuery(document).ready(function(){
       });
     });
     
-  } 
+  }
   
   // Callback Function
   function alertEnd(){
     // Do Animation
-    $('#mobile').addClass('powpow');  
+    $('#mobile').addClass('powpow');
     $("#notification").addClass("sayhi");
     $("#screen .dollar").addClass("bling");
     // Enable Button
@@ -289,13 +293,13 @@ jQuery(document).ready(function(){
   // Animate Button
   function kapow(){
     $("#topupnow").click(function(event){
-      
+      event.preventDefault();
       // Disable Button
-      $(this).attr('disabled','disabled');    
+      $(this).attr('disabled','disabled');
       // Animate Ball
       if ($('#mobile').hasClass('powpow')){
         $('#mobile').removeClass('powpow');
-      }    
+      }
       if ($('#notification').hasClass('sayhi')){
         $('#notification').removeClass('sayhi');
       }

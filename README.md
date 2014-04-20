@@ -10,11 +10,11 @@ If you do use it then i do not expect to be credited for your adaptations; but i
 ## How's it made?
 I've used **SCSS**, **Jquery** and **HTML5** to build the main architecture on the site. I have also used **SnapSVG** to create the awesome flying airplane on the finance form at the top of the page!
 
-* Bootstrap 3.1.1
-* SCSS
-* Jquery
-* HTML5
-* SnapSVG
+* [Bootstrap 3.1.1](http://getbootstrap.com)
+* [SCSS](http://sass-lang.com/‎)
+* [Jquery](http://jquery.com)
+* [HTML5](http://www.html5rocks.com/en/)
+* [SnapSVG](http://)
 * [CodeKit](https://incident57.com/codekit/)
 * [CodePen](http://codepen.io)
 
@@ -26,7 +26,7 @@ I've built this template on the most recent version of Chrome and have tested in
 |:-------------:|:-------------:| ---------------:| --------------:|
 | Chrome        | Yes           | No              | -              |
 | Opera         | Yes           | No              | -              |
-| Firefox       | Yes           | **Yes**         | **Being Fixed**|
+| Firefox       | Yes           | No              | -              |
 | Safari        | Yes           | No              | -              |
 | IE 10         | Yes           | No              | -              |
 | IE 11         | Yes           | No              | -              |
@@ -36,19 +36,21 @@ I've built this template on the most recent version of Chrome and have tested in
 * Opera 20.0
 * Firefox 28.0
 * Version 7.0
+* Internet Explorer 10
+* Internet Explorer 11
 
 ## Mobile Compatibility
 
 As a responsive website the layout should work seemlessly across all new mobile devices. It has been tested on iOS7 and Android Jellybean.
 
-| Mobile OS                                                                                            | Works        |
-| ----------------------------------------------------------------------------------------------------:|:-------------|
-| ![Android](https://cdn3.iconfinder.com/data/icons/social-circle/512/social_9-48.png "Android")       | Yes          |
-| ![Apple iOS 7](https://cdn0.iconfinder.com/data/icons/social-circle/512/apple2-48.png "iOS 7")       | Yes          |
+| Platform                                                                                             | OS           | Works        |
+| ----------------------------------------------------------------------------------------------------:|:-------------|:-------------|
+| ![Android](https://cdn3.iconfinder.com/data/icons/social-circle/512/social_9-48.png "Android")       | Jellybean+   | Yes          |
+| ![Apple iOS 7](https://cdn0.iconfinder.com/data/icons/social-circle/512/apple2-48.png "iOS 7")       | iOS6+        | Yes          |
 
 ## Demo
 
-**View the demo online [here](http://var2014.mattlitherland.com).**
+**View the demo online at [CodePen.io](http://cdpn.io/gepCf).**
 
 ![Preview](http://var2014.mattlitherland.com/github-cdn/full.png)
 
